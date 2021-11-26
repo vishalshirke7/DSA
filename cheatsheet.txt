@@ -1,0 +1,12 @@
+DP 
+https://leetcode.com/discuss/study-guide/1200320/Thief-with-a-knapsack-a-series-of-crimes.
+
+Graphs, digit DP, Trees, Arrays, LL, Dijkstra 
+CS fundamentals
+OS, DBMS< OOPS, CN, 
+Diff between process and thread, canary in python
+https://codeforces.com/blog/entry/95106
+
+
+RESUME - 
+1. Everything on should be answerable
