@@ -23,19 +23,44 @@ class Solution:
         col_map = sorted(col_map.items(), key=lambda x:x[0])
         return [val[1] for val in col_map]
 
-def topView(head, dis, level, dict):
 
-    if head is None:
-        return
+class Solution:
+    def topView(head, dis, level, dict):
 
-    if dis not in dict or level < dict[dis][1]:
-        dict[dis] = (head.key, level)
-    topView(head.left, dis - 1, level + 1, dict)
-    topView(head.right, dis + 1, level + 1, dict)
+        if head is None:
+            return
 
-def printTopView(head):
-    dict = {}
+        if dis not in dict or level < dict[dis][1]:
+            dict[dis] = (head.key, level)
+        topView(head.left, dis - 1, level + 1, dict)
+        topView(head.right, dis + 1, level + 1, dict)
 
-    topView(head, 0, 0, dict)
-    for key in sorted(dict.keys()):
-        print(dict.get(key)[0], end=' ')               
+    def printTopView(head):
+        dict = {}
+
+        topView(head, 0, 0, dict)
+        for key in sorted(dict.keys()):
+            print(dict.get(key)[0], end=' ')
+
+
+class Solution:
+    def fillMap(root, d, l, m):
+        if(root == None):
+            return
+
+        if d not in m:
+            m[d] = [root.data, l]
+        elif(m[d][1] > l):
+            m[d] = [root.data, l]
+        fillMap(root.left, d - 1, l + 1, m)
+        fillMap(root.right, d + 1, l + 1, m)
+
+    def topView(root):
+        m = {}
+        fillMap(root, 0, 0, m)
+        # Instead of sortng, we can store miniminum value of all 
+        # while mi in dic:
+        #     print(dic[mi], end=' ')
+        #     mi += 1
+        for it in sorted(m.keys()):
+            print(m[it][0], end=" ")
