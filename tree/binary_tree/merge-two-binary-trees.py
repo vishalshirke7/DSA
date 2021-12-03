@@ -36,11 +36,6 @@ class Solution:
 
 class Solution(object):
     def mergeTrees(self, t1, t2):
-        """
-        :type t1: TreeNode
-        :type t2: TreeNode
-        :rtype: TreeNode
-        """
         if not (t1 and t2):
             return t1 or t2
         queue1, queue2 = collections.deque([t1]), collections.deque([t2])

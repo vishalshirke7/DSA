@@ -1,4 +1,5 @@
 """
+https://www.interviewbit.com/old/problems/least-common-ancestor/
 https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/
 https://www.geeksforgeeks.org/lowest-common-ancestor-binary-tree-set-1/
 """
@@ -61,3 +62,33 @@ def lowestCommonAncestor(self, root, p, q):
     subs = [self.lowestCommonAncestor(kid, p, q)
             for kid in (root.left, root.right)]
     return root if all(subs) else max(subs)            
+
+
+    def lca(self, A, B, C):
+        found = False
+        ans = -1
+        def dfs(root):
+            nonlocal ans, found
+            if not root:
+                return False
+            left = dfs(root.left)
+            right = dfs(root.right)
+            if left and right:
+                ans = root.val
+                found = True
+                return True
+            if left or right:
+                if root.val == B or root.val == C:
+                    ans = root.val
+                    found = True
+                    return True
+                return True
+            if root.val == B or root.val == C:
+                found = True
+                return True
+            return False
+        dfs(A)
+        if B == C and found:
+            return B
+        return ans
+    

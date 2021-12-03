@@ -1,5 +1,6 @@
 """
 https://leetcode.com/problems/symmetric-tree/
+https://www.interviewbit.com/old/problems/symmetric-binary-tree/
 """
 
 class Solution:
@@ -19,8 +20,6 @@ class Solution:
         return True
 
 
-
-
 class Solution:
     def isSymmetric(self, root: Optional[TreeNode]) -> bool:
 
@@ -30,8 +29,6 @@ class Solution:
             if left.val != right.val:
                 return False
             return dfs(left.left, right.right) and dfs(left.right, right.left)
-
-
 
 
 class Solution:
