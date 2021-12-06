@@ -22,13 +22,7 @@ class Solution:
         return ans
 
 def lowestCommonAncestor(self, root, p, q):
-        """
-        :type root: TreeNode
-        :type p: TreeNode
-        :type q: TreeNode
-        :rtype: TreeNode
-        """
-                # If looking for me, return myself
+        # If looking for me, return myself
         if root == p or root == q:
             return root
         
@@ -64,31 +58,31 @@ def lowestCommonAncestor(self, root, p, q):
     return root if all(subs) else max(subs)            
 
 
-    def lca(self, A, B, C):
-        found = False
-        ans = -1
-        def dfs(root):
-            nonlocal ans, found
-            if not root:
-                return False
-            left = dfs(root.left)
-            right = dfs(root.right)
-            if left and right:
+def lca(self, A, B, C):
+    found = False
+    ans = -1
+    def dfs(root):
+        nonlocal ans, found
+        if not root:
+            return False
+        left = dfs(root.left)
+        right = dfs(root.right)
+        if left and right:
+            ans = root.val
+            found = True
+            return True
+        if left or right:
+            if root.val == B or root.val == C:
                 ans = root.val
                 found = True
                 return True
-            if left or right:
-                if root.val == B or root.val == C:
-                    ans = root.val
-                    found = True
-                    return True
-                return True
-            if root.val == B or root.val == C:
-                found = True
-                return True
-            return False
-        dfs(A)
-        if B == C and found:
-            return B
-        return ans
+            return True
+        if root.val == B or root.val == C:
+            found = True
+            return True
+        return False
+    dfs(A)
+    if B == C and found:
+        return B
+    return ans
     
