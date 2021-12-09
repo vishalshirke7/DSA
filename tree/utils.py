@@ -4,6 +4,7 @@ https://leetcode.com/problems/binary-tree-inorder-traversal/discuss/283746/all-d
 
 
 https://www.topcoder.com/community/data-science/data-science-tutorials/using-tries/
+https://leetcode.com/problems/validate-binary-search-tree/discuss/32112/Learn-one-iterative-inorder-traversal-apply-it-to-multiple-tree-questions-(Java-Solution)
 
 
 
