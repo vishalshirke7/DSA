@@ -23,21 +23,21 @@ def minOperations(nums, x):
 
 
 # Two sum
-# def minOperations(nums, x):
-# 	target = -x
-# 	for val in nums:
-# 		target += val
-# 	if target == 0:
-# 		return len(nums)
-# 	sum_map = {0: -1}
-# 	cur_sum = 0
-# 	ans = -1
-# 	for index in range(len(nums)):
-# 		cur_sum += nums[index]
-# 		if cur_sum - target in sum_map:
-# 			ans = max(ans, index - sum_map[cur_sum - target])
-# 		sum_map[cur_sum] = index
-# 	return ans if ans == -1 else len(nums) - ans
+def minOperations(nums, x):
+	target = -x
+	for val in nums:
+		target += val
+	if target == 0:
+		return len(nums)
+	sum_map = {0: -1}
+	cur_sum = 0
+	ans = -1
+	for index in range(len(nums)):
+		cur_sum += nums[index]
+		if cur_sum - target in sum_map:
+			ans = max(ans, index - sum_map[cur_sum - target])
+		sum_map[cur_sum] = index
+	return ans if ans == -1 else len(nums) - ans
 
 
 print('Output', minOperations([1,1,4,2,3], 5))

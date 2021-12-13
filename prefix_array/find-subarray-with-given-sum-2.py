@@ -1,8 +1,8 @@
 """
 https://leetcode.com/problems/subarray-sum-equals-k/
 https://www.geeksforgeeks.org/find-subarray-with-given-sum/
-Negative integers
 
+Negative integers
 """
 
 def findSubarraySum(arr, n, Sum):

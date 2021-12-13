@@ -4,9 +4,6 @@ https://www.interviewbit.com/old/problems/3-sum/
 """
 
 class Solution:
-    # @param A : list of integers
-    # @param B : integer
-    # @return an integer
     def threeSumClosest(self, A, B):
         A.sort()
         ans, closest = 0, float('inf')

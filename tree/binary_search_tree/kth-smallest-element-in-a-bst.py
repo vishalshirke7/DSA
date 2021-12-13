@@ -3,18 +3,10 @@ https://leetcode.com/problems/kth-smallest-element-in-a-bst/
 """
 #OWN
 class Solution:
-    def kthSmallest(self, root: Optional[TreeNode], k: int) -> int:
-        inorder = list()
-        def dfs(root):
-            if root:
-                total = 0
-                if root.left:
-                    total += dfs(root.left)
-                if total == k:
-                    return 
-                dfs(root.right)
-        dfs(root)
-        return inorder[k-1]
+    def kthSmallest(self, root, k):
+        def inorder(r):
+            return inorder(r.left) + [r.val] + inorder(r.right) if r else []    
+        return inorder(root)[k - 1]
 
 
 def kthSmallest(self, root: Optional[TreeNode], k: int) -> int:
@@ -37,13 +29,7 @@ def kthSmallest(self, root: Optional[TreeNode], k: int) -> int:
 
 class Solution:
     def kthSmallest(self, root, k):
-        """
-        :type root: TreeNode
-        :type k: int
-        :rtype: int
-        """
-        stack = []
-        
+        stack = []        
         while True:
             while root:
                 stack.append(root)
