@@ -1,5 +1,6 @@
 """
 https://leetcode.com/problems/search-in-rotated-sorted-array/
+https://www.geeksforgeeks.org/search-an-element-in-a-sorted-and-pivoted-array/
 
 There is an integer array nums sorted in ascending order (with distinct values).
 

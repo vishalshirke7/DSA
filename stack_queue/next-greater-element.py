@@ -5,18 +5,18 @@ https://leetcode.com/problems/next-greater-element-ii/
 
 # own version
 def nextGreaterElements(nums):
-    def find_max(start, end, nums, k):
+    arr_len, output = len(nums), list()
+    def find_max(start, end, k):
         for val in nums[start:end]:
             if val > k:
                 return val
         return None
-    arr_len, output = len(nums), list()
     for index in range(arr_len):
-        right = find_max(index + 1, arr_len, nums, nums[index])
+        right = find_max(index + 1, arr_len, nums[index])
         if right is not None:
             output.append(right)
         else:
-            left = find_max(0, index, nums, nums[index])
+            left = find_max(0, index, nums[index])
             if left is None:
                 output.append(-1)
             else:
