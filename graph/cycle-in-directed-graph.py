@@ -5,9 +5,6 @@ https://www.interviewbit.com/old/problems/cycle-in-directed-graph/
 # DFS
 import collections
 class Solution:
-    # @param A : integer
-    # @param B : list of list of integers
-    # @return an integer
     def solve(self, A, B):
         graph = collections.defaultdict(list)
         for v1, v2 in B:
@@ -72,4 +69,4 @@ class Graph:
                 in_degree[neighbour] -= 1
                 if in_degree[neighbour] == 0:
                     queue.append(neighbour)
-        print(topo_order)
+        return len(topo_order) == self.V
