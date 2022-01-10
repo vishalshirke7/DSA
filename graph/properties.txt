@@ -1,0 +1,18 @@
+1. Directed Acyclic Graph - 
+	1.1 Weighted
+		- POSITIVES / NEGATIVES - Topologicl sort works here with - O(V+E) 
+		- POSITIVES - Dijkstra works here with heap - O(E + VLogV)
+	1.2 Unit weight
+		- 
+
+2. Directed Cyclic Graph - 
+	2.1 Weighted
+		- POSITIVES / NEGATIVES - 
+		- POSITIVES - 
+	2.2 Unit weight
+		-
+
+
+2. UnDirected Graph - 
+	1.1 Weighted
+		- POSITIVES - Dijkstra works here with heap - O(E + VLogV)

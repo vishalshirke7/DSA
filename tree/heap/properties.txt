@@ -1,0 +1,10 @@
+https://hg.python.org/cpython/file/2.7/Lib/heapq.py#l16
+
+Time Complexities - 
+
+1. Create a heap  - NlogN / Using heapify for existing list- O(n)
+6. FindMin - O(1)
+2. Insert - LogN
+3. Delete - LogN
+4. Extract - LogN
+5. HeapSort - N Log N

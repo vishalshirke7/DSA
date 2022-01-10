@@ -1,4 +1,6 @@
-# USING  TOPO SORT 
+# USING  TOPO SORT WORKS WITH NEGATIVE AS WELL AS POSITIVE WEIGHTS 
+# BUT NO CYCLES
+
 from collections import defaultdict
 
 class Graph:
