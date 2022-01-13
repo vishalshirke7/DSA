@@ -58,7 +58,7 @@ def largestRectangleArea(heights):
             else:
                 break
     for index in range(len(heights)):
-        max_area = max(max_area, heights[index] * (right_max[index] + left_max[index] + 1))
+        max_area = max(max_area, heights[index] * (right_max[index] + left_max[index] - 1))
     return max_area
 
 
