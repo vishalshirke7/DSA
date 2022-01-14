@@ -28,7 +28,7 @@ def calculate_jumps(nums):
 def calculate_jumps(nums):
     jump, current_end, current_farthsest = 0, 0, 0
     for index in range(len(nums) - 1):
-        current_farthsest = max([current_farthsest, index + nums[index]])
+        current_farthsest = max(current_farthsest, index + nums[index])
         if current_end == index:
             jump += 1
             current_end = current_farthsest
@@ -36,7 +36,8 @@ def calculate_jumps(nums):
 
 
 def jump(nums):
-    if len(nums) <= 1: return 0
+    if len(nums) <= 1:
+        return 0
     l, r = 0, nums[0]
     times = 1
     while r < len(nums) - 1:

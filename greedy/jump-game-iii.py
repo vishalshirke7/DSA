@@ -3,16 +3,16 @@ https://leetcode.com/problems/jump-game-iii/
 
 """
 
-def Dfs(array, index, visited):
+def dfs(array, index, visited):
 	if index >= len(array) or index < 0 or index in visited:
 		return False
 	if array[index] == 0:
 		return True
 	visited.add(index)
-	return Dfs(array, index - array[index], visited) or Dfs(array, index + array[index], visited)
+	return dfs(array, index - array[index], visited) or dfs(array, index + array[index], visited)
 
 def canReach(arr, start):
-	return Dfs(arr, start, set())
+	return dfs(arr, start, set())
 
 
 # print(canReach([4,2,3,0,3,1,2], 5))
