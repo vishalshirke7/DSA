@@ -27,3 +27,98 @@ https://www.geeksforgeeks.org/connect-n-ropes-minimum-cost/
 
 Tekion Corp - 
 https://leetcode.com/problems/first-missing-positive/
+
+
+Find max product in the array
+String Anagram Question
+LinkedList cycle detection
+Spiral Traversal of a matrix
+Traversal question with respect to tree
+
+Triplet sum Question
+Right view of Binary Tree
+
+
+Reverse a stack without using any external data structure. Initially, I had no idea how to solve this problem. But the interviewer helped me by giving some hints and finally I was able to solve it.
+Find the merging point of two linked lists. I was told that no hints would be provided by the interviewer, but I knew the problem and I solved it quite easily.
+
+
+In an array of elements ( 1 <= a[i] <= n ), one element will be repeated. Find both the repeating and the missing elements.
+In an array of elements ( 1 <= a[i] <= n ) find the frequency of occurrence of numbers 1 to n without using any extra space (not even a hashmap). I was about to quit this question, the interviewer gave me a hint and then I was able to solve it. He was telling me that I have missed an edge case, I didn’t get what was that edge case and he moved to the next question.
+Given a binary tree, for each node in the tree, replace the node value with the sum of its children subtrees.
+
+
+Given N coins and an array of costs that represents the cost of each digit (1,2,…9), where costs[i] is the cost of picking the digit i. The task is to find the largest number that can be represented by using the N coins.
+
+
+Difference between Unique key and Primary key.
+Indexing and its use in DBMS.
+Difference between Locks and Semaphore.
+Paging and Segmentation.
+Deadlock and its conditions.
+What are TCP and UDP used for?
+Why do we use Object-Oriented Programming?
+
+
+Given an unsorted array, find and remove the element after which it will be sorted.
+2. In the given string, remove all duplicate words ( Handled all corner cases )
+
+Find the largest word and its length in a given sentence.
+In its follow up he asked to print all words of the largest length without repetition.
+
+
+
+
+Problem - Get top K searches in e-commerce 
+K = 10
+
+K = 3
+Min-Heap 'z': 2
+    'v' 2
+'a'2     'b'3
+ 
+'vsihal': 10
+'vsihal': 9
+'vsihal': 1
+
+1. Inserting a new search in Database/heap
+    - store in a persistent layer
+    1. heap < k
+    2. heap == k
+
+Orchestartor - input_search_query - a
+2. Write - 
+[a-Z]
+
+
+Clusters
+1 2 3
+4 5 6
+7 8 9
+
+1. Global Cache 
+
+
+1. Parallel Machines
+2. Load Balancing
+
+1. traffic to one server 
+2. Server down
+3. Heap is segregated - Retrieval
+
+
+Single Transaction
+    obj = id = 5
+    obj.add 8
+    obj.sub = 5
+    obj.save()
+
+Client - code
+Q - Order History Service
+
+1. change persistent data then write to cache
+     - User 1 []
+     "user1": [{}, {}, {}]
+     e. g - latest 10 order
+     - Constant page size 
+     user1: [2,3,4,5,6..10, 11]
