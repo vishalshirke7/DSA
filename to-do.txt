@@ -1,3 +1,5 @@
+https://leetcode.com/list/xo2bgr0r/
+
 https://www.geeksforgeeks.org/max-sum-of-m-non-overlapping-subarrays-of-size-k/
 https://www.geeksforgeeks.org/count-ways-to-make-sum-of-odd-and-even-indexed-elements-equal-by-removing-an-array-element/
 https://www.geeksforgeeks.org/sum-minimum-maximum-elements-subarrays-size-k/
@@ -65,60 +67,3 @@ Given an unsorted array, find and remove the element after which it will be sort
 
 Find the largest word and its length in a given sentence.
 In its follow up he asked to print all words of the largest length without repetition.
-
-
-
-
-Problem - Get top K searches in e-commerce 
-K = 10
-
-K = 3
-Min-Heap 'z': 2
-    'v' 2
-'a'2     'b'3
- 
-'vsihal': 10
-'vsihal': 9
-'vsihal': 1
-
-1. Inserting a new search in Database/heap
-    - store in a persistent layer
-    1. heap < k
-    2. heap == k
-
-Orchestartor - input_search_query - a
-2. Write - 
-[a-Z]
-
-
-Clusters
-1 2 3
-4 5 6
-7 8 9
-
-1. Global Cache 
-
-
-1. Parallel Machines
-2. Load Balancing
-
-1. traffic to one server 
-2. Server down
-3. Heap is segregated - Retrieval
-
-
-Single Transaction
-    obj = id = 5
-    obj.add 8
-    obj.sub = 5
-    obj.save()
-
-Client - code
-Q - Order History Service
-
-1. change persistent data then write to cache
-     - User 1 []
-     "user1": [{}, {}, {}]
-     e. g - latest 10 order
-     - Constant page size 
-     user1: [2,3,4,5,6..10, 11]

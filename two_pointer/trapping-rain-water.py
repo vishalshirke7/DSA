@@ -1,6 +1,6 @@
 """"
 https://leetcode.com/problems/trapping-rain-water/
-https://www.interviewbit.com/old/problems/rain-water-trapped/
+https://www.geeksforgeeks.org/trapping-rain-water/
 """
 
 # TWO Pointer

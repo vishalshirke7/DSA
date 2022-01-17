@@ -18,6 +18,6 @@ class Solution:
                     if target - candidates[index] >= 0:
                         dfs(result, temp + [candidates[index]], candidates, target - candidates[index], index)
                     else:
-                        return         
+                        return
         dfs(result, [], candidates, target, 0)
         return result

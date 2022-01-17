@@ -29,5 +29,5 @@ def topKFrequent(nums, k):
     return consolidated[:k]
 
 
-print('Output', topKFrequent([1,1,1,2,2,3], 2))   
+print('Output', topKFrequent([1,1,1,2,2,3], 3))
 # print('Output', topKFrequent([1], 1))    
