@@ -1,5 +1,6 @@
 """
 https://leetcode.com/problems/longest-substring-without-repeating-characters/
+https://www.geeksforgeeks.org/length-of-the-longest-substring-without-repeating-characters/
 """
 
 # def lengthOfLongestSubstring(s):
@@ -40,7 +41,6 @@ def lengthOfLongestSubstring(s):
     left, right, output, char_map = 0, 0, 0, dict()
     while right < len(s):
         char_map[s[right]] = char_map.get(s[right], 0) + 1
-        print(s[left], char_map[s[left]], s[right], char_map[s[right]])
         while char_map[s[right]] > 1:
             char_map[s[left]] -= 1
             left += 1

@@ -1,4 +1,5 @@
 """
+https://www.geeksforgeeks.org/stock-buy-sell/
 https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/
 https://interviewbit.com/old/problems/best-time-to-buy-and-sell-stocks-ii/
 """
