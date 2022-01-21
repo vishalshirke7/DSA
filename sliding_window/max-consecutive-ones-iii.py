@@ -1,4 +1,9 @@
 """
+https://leetcode.com/problems/max-consecutive-ones-iii/
+https://practice.geeksforgeeks.org/problems/maximize-number-of-1s0905/1
+https://www.interviewbit.com/problems/maximum-ones-after-modification/
+"""
+
 def findZeroes(arr, n, m) :
     indexes_0 = list()
     for index in range(n):
@@ -9,7 +14,7 @@ def findZeroes(arr, n, m) :
         if indexes_0[ptr_0 + 1] - indexes_0[ptr_0] > 1:
             return indexes_0[ptr_0] + 1
         return indexes_0[ptr_0 + 1]
-    # print('indexes_0', indexes_0)        
+
     ptr_0 = start = end = count_0 = ans = 0
     while start <= end and end <= n - 1:
         if arr[end] == 0:
@@ -25,17 +30,9 @@ def findZeroes(arr, n, m) :
 print(findZeroes([0,0,1,1,0,0,1,1,1,0,1,1,0,0,0,1,1,1,1], 19, 3))
 print(findZeroes([1,0,0,1,1,0,1,0,1,1,1], 11, 2))
 print(findZeroes([1,1,1,0,0,0,1,1,1,1,0], 11, 2))
-"""
-
-"""
-https://leetcode.com/problems/max-consecutive-ones-iii/
-https://practice.geeksforgeeks.org/problems/maximize-number-of-1s0905/1
-https://www.interviewbit.com/problems/maximum-ones-after-modification/
-"""
 
 # 1
-def findZeroes(arr, n, m) :
-    # code here
+def findZeroes(arr, n, m):
     total_max = 0
     current_max = 0
     temp_m = m
