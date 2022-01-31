@@ -34,24 +34,13 @@ def printRightView(root):
     q.append(root)
  
     while (len(q)):
- 
-        # number of nodes at current level
         n = len(q)
- 
-        # Traverse all nodes of current level
         for i in range(1, n + 1):
             temp = q[0]
             q.pop(0)
- 
-            # Print the left most element
-            # at the level
             if (i == 1):
                 print(temp.data, end=" ")
- 
-            # Add left node to queue
             if (temp.left != None):
                 q.append(temp.left)
- 
-            # Add right node to queue
             if (temp.right != None):
                 q.append(temp.right)

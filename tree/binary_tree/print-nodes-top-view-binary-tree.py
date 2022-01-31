@@ -1,8 +1,8 @@
 """
 https://www.geeksforgeeks.org/print-nodes-top-view-binary-tree/
 """
-
 import collections
+
 class Solution:
     
     def topView(self,root):
@@ -58,9 +58,5 @@ class Solution:
     def topView(root):
         m = {}
         fillMap(root, 0, 0, m)
-        # Instead of sortng, we can store miniminum value of all 
-        # while mi in dic:
-        #     print(dic[mi], end=' ')
-        #     mi += 1
         for it in sorted(m.keys()):
             print(m[it][0], end=" ")

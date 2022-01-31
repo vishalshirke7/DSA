@@ -7,7 +7,7 @@ class Solution:
     def combinationSum(self, candidates: List[int], target: int) -> List[List[int]]:
         result = list()
         candidates.sort()
-        def dfs(result, temp, candidates, target, start):
+        def dfs(result, temp, target, start):
             if target < 0:
                 return 
             elif target == 0:
@@ -19,5 +19,5 @@ class Solution:
                         dfs(result, temp + [candidates[index]], candidates, target - candidates[index], index)
                     else:
                         return
-        dfs(result, [], candidates, target, 0)
+        dfs(result, [], target, 0)
         return result
